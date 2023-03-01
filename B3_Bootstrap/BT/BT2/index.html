@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/f273bcc8b3.js" crossorigin="anonymous"></script>
+    <title>BT2</title>
+</head>
+
+<body>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <div class="container-fluid d-flex col-12">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"></div>
+        <div class="silde-bar bg-dark col-2 vh-100">
+            <div class="sidebar">
+                <div class="sidebar-heading py-3 fs-6 border-bottom pe-5 text-center text-light">
+                    <i class="fa-solid fa-a text-light"></i> Admin
+                </div>
+
+                <div class="sidebar-heading py-3 fs-6 border-bottom pe-5 text-light text-center">
+                    <i class="fa-solid fa-user ms-4 mx-2"></i>
+                    Vũ Ngọc Anh
+                </div>
+                <div class="list-group list-group-flush mx-2 my-3">
+                    <div class="input-group mb-3 mt-3">
+                        <input type="text" class="form-control bg-transparent" placeholder="Search"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                        <button class="input-group-text bg-transparent" id="basic-addon2">
+                            <i class="text-light fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <a href=""
+                        class="list-group-item bg-dark text-light outline-light fw-bold dropdown-toggle px-2 text-center"><i
+                            class="fa-solid fa-house ms-1 me-2"></i>Trang chủ</a>
+                    <div class="dropdown my-3 ">
+                        <a class="btn btn-secondary active dropdown-toggle bg-info text-start text-center"
+                            style="width: 100%" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="me-2 fa-solid fa-list-ul"></i>Danh sách sản phẩm
+                        </a>
+
+                        <ul class="dropdown-menu bg-transparent" aria-labelledby="dropdownMenuLink"
+                            style="width: 100%; border: none">
+                            <li class="ms-3 text-light">
+                                <input type="radio" />
+                                <label for="">Danh sách</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end silde-bar -->
+        <div class="main bg-light col-10">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="fa-solid fa-bars"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" data-bs-toggle="offcanvas"
+                        href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                            <a class="nav-link" href="#">Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+
+            <div class="title d-flex justify-content-between">
+                <h1 class="">Thêm mới sản phẩm</h1>
+            </div>
+            <!-- end title -->
+            <section class="container-fluid mt-4 d-flex">
+                <div class="main-left col-7 ">
+                    <div class="main-content-1">
+                        <div class="col-12 col-md-12 p-3">
+                            <form action="" class="row border bg-light">
+                                <div class="col-12 col-md-12 mt-3">
+                                    <h3 class="text-center">Thêm mới sản phẩm</h3>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="inputName" class="form-label">Tên sản phẩm(*): </label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="">
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label for="inputDescription" class="form-label">Mô tả ngắn(*): </label>
+                                    <textarea class="form-control" id="inputDescription" rows="3"></textarea>
+                                </div>
+                                <label for="inputDescription" class="form-label">Mô tả chi tiết(*): </label>
+
+                                <div class="col-12 mb-3 bg-white">
+                                    <br>
+                                    <div class="row">
+                                        <div class="btn-group bg-white border-1 p-2">
+                                            <a href="#" class="btn btn-light active bg-light" aria-current="page"><i
+                                                    class="fa-solid fa-wand-magic-sparkles"></i></a>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-bold"></i></a>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-underline"></i></a>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-italic"></i></a>
+                                            <div class="btn-group" role="group">
+                                                <button id="btnGroupDrop1" type="button"
+                                                    class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Source Sans Pro
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group" role="group">
+                                                <button id="btnGroupDrop1" type="button"
+                                                    class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    A
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-list-ul"></i></a>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-list-ol"></i></a>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-align-left"></i></a>
+                                            <div class="btn-group" role="group">
+                                                <button id="btnGroupDrop1" type="button"
+                                                    class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa-solid fa-table-list"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-link"></i></a>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-image"></i></a>
+                                            <a href="#" class="btn btn-light"><i class="fa-solid fa-video"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-group bg-white border-1  mb-3">
+                                        <a href="#" class="btn btn-light active bg-light" aria-current="page"><i
+                                                class="fa-solid fa-wand-magic-sparkles"></i></a>
+                                        <a href="#" class="btn btn-light"><i class="fa-solid fa-bold"></i></a>
+                                        <a href="#" class="btn btn-light"><i class="fa-solid fa-underline"></i></a>
+                                        <a href="#" class="btn btn-light"><i class="fa-solid fa-italic"></i></a>
+                                    </div>
+
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end main content 1 -->
+                    <div class="main-content-2">
+                        <div class="container">
+                            <div class="col-12 col-md-12">
+                                <form action="" class="row border bg-light">
+                                    <div class="col-12 col-md-12 mt-3">
+                                        <h3 class="">Dữ liệu sản phẩm</h3>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <div class="row">
+                                            <label for="input" class="col-sm-2 col-form-label">Đơn giá VND</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="input">
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                        <div class="row mt-3">
+                                            <label for="input" class="col-sm-2 col-form-label">Trạng thái(*)</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>Mới...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end main-content 2 -->
+                </div>
+                <!-- end main left -->
+                <div class="main-right col-5 mt-3">
+                    <div class="main-content-2">
+                        <div class="container">
+                            <div class="col-12 col-md-12">
+                                <form action="" class="row border bg-light">
+                                    <div class="col-12 col-md-12 mt-3">
+                                        <h3 class="">Thể loại sản phẩm</h3>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+
+                                        <label for="input" class="col-sm-2 col-form-label">Thể loại</label>
+                                        <div class="col-sm-12">
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option selected>Điện thoại</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="container mt-3 ">
+                            <div class="col-12 col-md-12">
+                                <form action="" class="row border bg-light">
+                                    <div class="col-12 col-md-12 mt-3">
+                                        <h3 class="">Ảnh đại diện</h3>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+
+                                        <label for="input" class="col-sm-2 col-form-label">Chọn ảnh (*)</label>
+                                        <p>Định dạng: jpg,png,gì,svg-kích cỡ &lt MB</p>
+                                        <div class="col-sm-12">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Recipient's username"
+                                                    aria-label="Recipient's username with two button addons">
+                                                <button class="btn btn-outline-secondary" type="button">Browse</button>
+                                                <button class="btn btn-outline-secondary" type="button">Upload</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="btn-group mt-5" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-primary">Lưu</button>
+                            <button type="button" class="btn btn-outline-light bg-white text-dark">Huỷ</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- end main content -->
+        <!-- top row -->
+        <div class="row">
+            <div class="col-sm-12"></div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- end main -->
+    </div>
+    <!-- end container-fluid -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+        </div>
+        <div class="wrapper-content">
+            <div class="nav">
+                <ul class="list-nav">
+                    <li><a href="">Phim hoạt hình</a></li>
+                    <li><a href="">Phim hoạt hình yêu thích</a></li>
+                    <li><a href="">Nhân vật hoạt hình</a></li>
+                    <li><a href="">Góp ý</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="related-movie">
+                    <div class="item-movie">
+                        <div class="ifr-movie">
+                            <iframe src="https://www.youtube.com/embed/RSwgdGr_sAw" frameborder="0"></iframe>
+                        </div>
+                        <div class="name-movie">
+                            <a href="">
+                                <h3>Trải Nghiệm Khách Sạn Thời Kỳ Đồ Đá</h3>
+                            </a><span>5,147,525 lượt xem</span>
+                        </div>
+                        <div class="channel-movie">
+                            <a href="">
+                                <h3>Channel Fun</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-movie">
+                        <div class="img-movie">
+                            <iframe src="https://www.youtube.com/embed/ra0Y2p1uRlA" frameborder="0"></iframe>
+                        </div>
+                        <div class="name-movie">
+                            <a href="">
+                                <h3>Hồn Ma Xuất Hiện</h3>
+                            </a><span>5,147,525 lượt xem</span>
+                        </div>
+                        <div class="channel-movie">
+                            <a href="">
+                                <h3>Channel Fun</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-movie">
+                        <div class="img-movie">
+                            <iframe src="https://www.youtube.com/embed/xMjq8KvYZ00" frameborder="0"></iframe>
+                        </div>
+                        <div class="name-movie">
+                            <a href="">
+                                <h3>Máy Bay Côn Trùng</h3>
+                            </a><span>5,147,525 lượt xem</span>
+                        </div>
+                        <div class="channel-movie">
+                            <a href="">
+                                <h3>Channel Fun</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-movie">
+                        <div class="img-movie">
+                            <iframe src="https://www.youtube.com/embed/3pGZ4nN7FeA" frameborder="0"></iframe>
+                        </div>
+                        <div class="name-movie">
+                            <a href="">
+                                <h3>Miếng Dán Hạnh Phúc, Mẹ Và Trận Chiến Của Mẹ</h3>
+                            </a><span>5,147,525 lượt xem</span>
+                        </div>
+                        <div class="channel-movie">
+                            <a href="">
+                                <h3>Channel Fun</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-movie">
+                    <div class="main-item">
+                        <div class="main-item-ifr">
+                            <iframe src="https://www.youtube.com/embed/29BdYhRRk34" frameborder="0"></iframe>
+                        </div>
+                        <div class="name-movie">
+                            <a href="">
+                                <h3>Welcome đến với khách sạn Nobi</h3>
+                            </a><span>5,147,525 lượt xem</span>
+                        </div>
+                        <div class="channel-movie">
+                            <a href="">
+                                <h3>Channel Fun</h3>
+                            </a>
+                        </div>
+                        <div class="descrip">
+                            <p>Dự án điện ảnh thứ 41 của thương hiệu mèo máy dựa trên tập truyện dài cùng tên của Fujiko
+                                F. Fujio. Trước đó, truyện Nobita's Little Star Wars từng được chuyển thể thành hoạt
+                                hình năm 1985. Tác phẩm ra rạp trong nước hôm 27/5, dẫn đầu doanh thu phòng vé tuần qua.
+                                <br>
+                                <br>
+                                Kịch bản xoay quanh kỳ nghỉ hè, Nobita tình cờ gặp một cậu bạn tí hon tên Papi, có kích
+                                thước chỉ bằng ngón tay cái người bình thường. Sau khi kết thân, Papi tiết lộ danh tính
+                                là tổng thống hành tinh Pirika - ngôi sao nhỏ cách xa Trái Đất. Quê hương cậu hiện bị
+                                quân phiến loạn nắm chính quyền. Papi một mình lên tàu vũ trụ chạy trốn và lạc đến Nhật
+                                Bản.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <h4>2023- Thiết kế web bởi hoathinhvn.net</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.container{
+    width: 100%;
+    height: 500px ;
+    background-color: aliceblue;
+}
+.header{
+    width: 100%;
+    height: 30%;
+}
+
+.head{
+    background-color: azure;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 70%;
+}
+
+.head-link{
+    background-color: azure;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 30%;
+}
+
+.main-content{
+    display: flex;
+    height: 40%;
+}
+
+.main-content .left{
+    width: 30%;
+    background-color: azure;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.main-content .right{
+    width: 30%;
+    background-color: azure;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.main-content .content{
+    width: 40%;
+    background-color: azure;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.footer{
+    background-color: azure;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 30%;
+}
