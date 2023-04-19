@@ -8,14 +8,14 @@ export default function Header() {
       setTimeout(() => {
         navigate("/admin");
       }, 3000);
-      window.close();
+      // window.close();
     } else {
       setTimeout(() => {
         navigate("/");
       }, 3000);
   
       window.alert("You are not admin");
-      window.close();
+      // window.close();
     }
   };
   return (
